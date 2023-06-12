@@ -2,12 +2,9 @@ import asyncio
 import os
 
 from pyrogram import (Client,
-                      ContinuePropagation,
-                      InputMediaDocument,
-                      InputMediaVideo,
-                      InputMediaAudio)
+                      ContinuePropagation)
 from pyrogram.types import (
-    InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
+    InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup,InputMediaDocument,InputMediaVideo,InputMediaAudio
 )
 
 from helper.ffmfunc import duration
