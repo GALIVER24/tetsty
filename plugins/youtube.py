@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from pyrogram.types import (
     InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
 )
@@ -25,7 +25,7 @@ async def ytdl(_, message):
         pass
 
     url = message.text.strip()
-    await message.reply_chat_action("typing")
+    await message.reply_chat_action(enums.ChatAction.TYPING)
     try:
         title, thumbnail_url, formats = extractYt(url)
 
